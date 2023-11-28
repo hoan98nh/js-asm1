@@ -25,23 +25,31 @@
                         <div class="login">
                             <a href="#">Đăng nhập</a>
                         </div>
-                        <div class="flex">
+                        <div class="flex lang-box">
                             <div class="lang active">VN</div>
                             <div>|</div>
                             <div class="lang">EN</div>
                         </div>
                         <div class="cart-btn">
-                            <button>
+                            <div id="cart-btn">
                                 <img src="./img/Cart.svg" alt="cart">
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </header>
+    <div>
         <div class="banner">
             <!-- slide -->
             <div class="main">
+                <div id="slider-btn-left">
+                    <img src="./img/left.svg" alt="">
+                </div>
+                <div id="slider-btn-right">
+                    <img src="./img/right.svg" alt="">
+                </div>
                 <div class="slider" id="slider">
                     <div class="slide-item" id="anh1">
                         <div></div>
@@ -64,11 +72,12 @@
         <div class="main-content">
             <div class="container">
                 <div class="product">
+                    <!-- item 1 -->
                     <div class="item-pdt flex">
                         <div class="left">
                             <div class="order">
                                 <div class="main-img">
-                                    
+                                    <!-- main img -->
                                 </div>
                                 <div class="list-img flex">
                                     <div class="item-img">
@@ -87,48 +96,50 @@
                             </div>
                         </div>
                         <div class="right">
-                            <div>
+                            <div class="right-inside">
                                 <form action="#">
                                     <label for="name-tea" class="pdt-name">
-                                        
+                                        <!-- name pdt here -->
                                     </label>
-                                    <div class="flex">
-                                        <label for="size">Kích cỡ</label>
-                                        <div>
-                                            <input type="button" value="S" />
-                                            <input type="button" value="M" />
-                                            <input type="button" value="L" />
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="size" class="infor-tea">Kích cỡ: </label>
+                                        <div class="flex gap-5 ">
+                                            <div class="btnSize sizeS active">S</div>
+                                            <div class="btnSize sizeM">M</div>
+                                            <div class="btnSize sizeL">L</div>
                                         </div>
                                     </div>
-                                    <div class="flex">
-                                        <label for="amount">Số lượng</label>
-                                        <div>
+                                    <div class="flex soLuong gap-50 blockSpace">
+                                        <label for="amount" class="infor-tea">Số lượng: </label>
+                                        <div class="flex gap-5">
                                             <div class="amountBtn minus">-</div>
-                                            <div class="soluong">1</div>
+                                            <div class="showAmount">1</div>
                                             <div class="amountBtn plus">+</div>
                                         </div>
                                     </div>
-                                    <div class="flex">
-                                        <label for="note">Ghi chú</label>
-                                        <textarea name="note" id="" cols="30" rows="10"></textarea>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="note" class="infor-tea">Ghi chú: </label>
+                                        <textarea name="note" id="" cols="30" rows="5"></textarea>
                                     </div>
-                                    <div class="flex">
-                                        <label for="gia" class="">Giá: </label>
-                                        <div class="gia"></div>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="gia" class="infor-tea">Giá: </label>
+                                        <div class="giaBox"><span class="gia"></span>đ</div>
+                                        <div class="giaGoc"></div>
                                     </div>
-                                    <div class="btn-location flex">
-                                        <div>THÊM VÀO GIỎ HÀNG</div>
-                                        <div>MUA HÀNG</div>
+                                    <div class="btn-location flex gap-20">
+                                        <div class="btnAction addToCart">THÊM VÀO GIỎ HÀNG</div>
+                                        <div class="btnAction buyNow">MUA HÀNG</div>
                                     </div>
                                 </form>
                             </div>
                         </div>
                     </div>
+                    <!-- item 2 -->
                     <div class="item-pdt flex">
                         <div class="left">
                             <div class="order">
                                 <div class="main-img">
-                                    
+                                    <!-- main img -->
                                 </div>
                                 <div class="list-img flex">
                                     <div class="item-img">
@@ -147,34 +158,163 @@
                             </div>
                         </div>
                         <div class="right">
-                            <div>
+                            <div class="right-inside">
                                 <form action="#">
                                     <label for="name-tea" class="pdt-name">
-                                        
+                                        <!-- name pdt here -->
                                     </label>
-                                    <div>
-                                        <label for="size">Kích cỡ</label>
-                                        <div>
-                                            <input type="button" value="S" />
-                                            <input type="button" value="M" />
-                                            <input type="button" value="L" />
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="size" class="infor-tea">Kích cỡ: </label>
+                                        <div class="flex gap-5 ">
+                                            <div class="btnSize sizeS active">S</div>
+                                            <div class="btnSize sizeM">M</div>
+                                            <div class="btnSize sizeL">L</div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <label for="amount">Số lượng</label>
-                                        <div>
+                                    <div class="flex soLuong gap-50 blockSpace">
+                                        <label for="amount" class="infor-tea">Số lượng: </label>
+                                        <div class="flex gap-5">
                                             <div class="amountBtn minus">-</div>
-                                            <input type="number" name="amount">
+                                            <div class="showAmount">1</div>
                                             <div class="amountBtn plus">+</div>
                                         </div>
                                     </div>
-                                    <div>
-                                        <label for="note">Ghi chú</label>
-                                        <textarea name="note" id="" cols="30" rows="10"></textarea>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="note" class="infor-tea">Ghi chú: </label>
+                                        <textarea name="note" id="" cols="30" rows="5"></textarea>
                                     </div>
-                                    <div class="flex">
-                                        <label for="gia" class="">Giá: </label>
-                                        <div class="gia"></div>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="gia" class="infor-tea">Giá: </label>
+                                        <div class="giaBox"><span class="gia"></span>đ</div>
+                                        <div class="giaGoc"></div>
+                                    </div>
+                                    <div class="btn-location flex gap-20">
+                                        <div class="btnAction addToCart">THÊM VÀO GIỎ HÀNG</div>
+                                        <div class="btnAction buyNow">MUA HÀNG</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="item-pdt flex">
+                        <div class="left">
+                            <div class="order">
+                                <div class="main-img">
+                                    <!-- main img -->
+                                </div>
+                                <div class="list-img flex">
+                                    <div class="item-img">
+                                        <img src="./img/sp1.png" alt="">
+                                    </div>
+                                    <div class="item-img">
+                                        <img src="./img/sp2.png" alt="">
+                                    </div>
+                                    <div class="item-img">
+                                        <img src="./img/sp3.png" alt="">
+                                    </div>
+                                    <div class="item-img">
+                                        <img src="./img/sp4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="right-inside">
+                                <form action="#">
+                                    <label for="name-tea" class="pdt-name">
+                                        <!-- name pdt here -->
+                                    </label>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="size" class="infor-tea">Kích cỡ: </label>
+                                        <div class="flex gap-5 ">
+                                            <div class="btnSize sizeS active">S</div>
+                                            <div class="btnSize sizeM">M</div>
+                                            <div class="btnSize sizeL">L</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex soLuong gap-50 blockSpace">
+                                        <label for="amount" class="infor-tea">Số lượng: </label>
+                                        <div class="flex gap-5">
+                                            <div class="amountBtn minus">-</div>
+                                            <div class="showAmount">1</div>
+                                            <div class="amountBtn plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="note" class="infor-tea">Ghi chú: </label>
+                                        <textarea name="note" id="" cols="30" rows="5"></textarea>
+                                    </div>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="gia" class="infor-tea">Giá: </label>
+                                        <div class="giaBox"><span class="gia"></span>đ</div>
+                                        <div class="giaGoc"></div>
+                                    </div>
+                                    <div class="btn-location flex gap-20">
+                                        <div class="btnAction addToCart">THÊM VÀO GIỎ HÀNG</div>
+                                        <div class="btnAction buyNow">MUA HÀNG</div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="item-pdt flex">
+                        <div class="left">
+                            <div class="order">
+                                <div class="main-img">
+                                    <!-- main img -->
+                                </div>
+                                <div class="list-img flex">
+                                    <div class="item-img">
+                                        <img src="./img/sp1.png" alt="">
+                                    </div>
+                                    <div class="item-img">
+                                        <img src="./img/sp2.png" alt="">
+                                    </div>
+                                    <div class="item-img">
+                                        <img src="./img/sp3.png" alt="">
+                                    </div>
+                                    <div class="item-img">
+                                        <img src="./img/sp4.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="right-inside">
+                                <form action="#">
+                                    <label for="name-tea" class="pdt-name">
+                                        <!-- name pdt here -->
+                                    </label>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="size" class="infor-tea">Kích cỡ: </label>
+                                        <div class="flex gap-5 ">
+                                            <div class="btnSize sizeS active">S</div>
+                                            <div class="btnSize sizeM">M</div>
+                                            <div class="btnSize sizeL">L</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex soLuong gap-50 blockSpace">
+                                        <label for="amount" class="infor-tea">Số lượng: </label>
+                                        <div class="flex gap-5">
+                                            <div class="amountBtn minus">-</div>
+                                            <div class="showAmount">1</div>
+                                            <div class="amountBtn plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="note" class="infor-tea">Ghi chú: </label>
+                                        <textarea name="note" id="" cols="30" rows="5"></textarea>
+                                    </div>
+                                    <div class="flex gap-50 blockSpace">
+                                        <label for="gia" class="infor-tea">Giá: </label>
+                                        <div class="giaBox"><span class="gia"></span>đ</div>
+                                        <div class="giaGoc"></div>
+                                    </div>
+                                    <div class="btn-location flex gap-20">
+                                        <div class="btnAction addToCart">THÊM VÀO GIỎ HÀNG</div>
+                                        <div class="btnAction buyNow">MUA HÀNG</div>
                                     </div>
                                 </form>
                             </div>
@@ -183,12 +323,23 @@
                 </div>
             </div>
         </div>
-    </header>
-    <div>
+        <div>
+            <div id="cart">
+                <div id="cart-data">
+                    <div id="boxCart" class="flex gap-50">
 
+                    </div>
+                    <!-- cart-item -->
+                    <div class="total-price">
+                        Tổng: <span id="sum-cart">0</span>đ
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
     <footer>
-
+        <div class="txtFt">Bản quyền thuộc về @ Phúc Long</div>
     </footer>
 </body>
 <script src="./js/index.js"></script>
