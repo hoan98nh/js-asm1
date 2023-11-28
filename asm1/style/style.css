@@ -69,7 +69,7 @@ a{
     display: flex;
     width: 3600px;
     /* transform: translate3d(-1200px, 0px, 0px); */
-    transition: all 0.25s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 .slider img{
     width: 100%;
@@ -94,6 +94,7 @@ a{
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    transition: all 0.5s ease 0s;
 }
 
 .dot-item.active{

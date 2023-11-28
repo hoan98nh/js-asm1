@@ -68,7 +68,7 @@
                         <div class="left">
                             <div class="order">
                                 <div class="main-img">
-                                    <img src="./img/sp1.png" alt="">
+                                    
                                 </div>
                                 <div class="list-img flex">
                                     <div class="item-img">
@@ -89,28 +89,36 @@
                         <div class="right">
                             <div>
                                 <form action="#">
-                                    <label for="name-tea">
-                                        <b>Trà gì đó</b>
+                                    <label for="name-tea" class="pdt-name">
+                                        
                                     </label>
-                                    <div>
+                                    <div class="flex">
                                         <label for="size">Kích cỡ</label>
                                         <div>
-                                            <input type="button" value="S"/>
-                                            <input type="button" value="M"/>
-                                            <input type="button" value="L"/>
+                                            <input type="button" value="S" />
+                                            <input type="button" value="M" />
+                                            <input type="button" value="L" />
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="flex">
                                         <label for="amount">Số lượng</label>
                                         <div>
-                                            <button>-</button>
-                                            <span>4</span>
-                                            <button>+</button>
+                                            <div class="amountBtn minus">-</div>
+                                            <div class="soluong">1</div>
+                                            <div class="amountBtn plus">+</div>
                                         </div>
                                     </div>
-                                    <div>
+                                    <div class="flex">
                                         <label for="note">Ghi chú</label>
                                         <textarea name="note" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <div class="flex">
+                                        <label for="gia" class="">Giá: </label>
+                                        <div class="gia"></div>
+                                    </div>
+                                    <div class="btn-location flex">
+                                        <div>THÊM VÀO GIỎ HÀNG</div>
+                                        <div>MUA HÀNG</div>
                                     </div>
                                 </form>
                             </div>
@@ -120,7 +128,7 @@
                         <div class="left">
                             <div class="order">
                                 <div class="main-img">
-                                    <img src="./img/sp1.png" alt="">
+                                    
                                 </div>
                                 <div class="list-img flex">
                                     <div class="item-img">
@@ -139,7 +147,37 @@
                             </div>
                         </div>
                         <div class="right">
-                            something
+                            <div>
+                                <form action="#">
+                                    <label for="name-tea" class="pdt-name">
+                                        
+                                    </label>
+                                    <div>
+                                        <label for="size">Kích cỡ</label>
+                                        <div>
+                                            <input type="button" value="S" />
+                                            <input type="button" value="M" />
+                                            <input type="button" value="L" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="amount">Số lượng</label>
+                                        <div>
+                                            <div class="amountBtn minus">-</div>
+                                            <input type="number" name="amount">
+                                            <div class="amountBtn plus">+</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <label for="note">Ghi chú</label>
+                                        <textarea name="note" id="" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <div class="flex">
+                                        <label for="gia" class="">Giá: </label>
+                                        <div class="gia"></div>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
